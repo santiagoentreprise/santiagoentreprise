@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Funcionário 24h para WhatsApp - Atendimento automático que transforma mensagens em vendas e agendamentos sem faltas, atrasos ou processos trabalhistas"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>SANTIAGO ENTREPRISE - Funcionário 24h para WhatsApp</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav-container">
+        <div class="nav-content">
+          <div class="logo">
+            <img src="img/logo_empresa.png" alt="SANTIAGO ENTREPRISE Logo" class="logo-img" onerror="this.style.display='none';" />
+            <div class="logo-text">
+              <span class="logo-name">SANTIAGO</span>
+              <span class="logo-subtitle">ENTREPRISE</span>
+            </div>
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#inicio" onclick="closeMobileMenu()">Início</a></li>
+            <li><a href="#funcionalidades" onclick="closeMobileMenu()">Funcionalidades</a></li>
+            <li><a href="#beneficios" onclick="closeMobileMenu()">Benefícios</a></li>
+            <li><a href="#como-funciona" onclick="closeMobileMenu()">Como Funciona</a></li>
+            <li><a href="#contato" onclick="closeMobileMenu()">Contato</a></li>
+          </ul>
+          <button class="btn-primary btn-desktop" onclick="scrollToOrcamento()">
+            Solicitar Orçamento
+          </button>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="inicio">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-logo-section">
+              <img src="img/logo_empresa.png" alt="SANTIAGO ENTREPRISE Logo" class="hero-logo-img" onerror="this.style.display='none';" />
+              <div class="hero-logo-text">
+                <h2 class="hero-logo-name">SANTIAGO</h2>
+                <h3 class="hero-logo-subtitle">ENTREPRISE</h3>
+              </div>
+            </div>
+            <h1 class="hero-title">Funcionário 24h para Seu Negócio</h1>
+            <p class="hero-subtitle">
+              Transforme mensagens do WhatsApp em oportunidades de venda ou
+              agendamento, automaticamente. Tenha um funcionário que trabalha 24h
+              sem faltas, atrasos ou processos trabalhistas, com custo muito menor.
+            </p>
+            <div class="hero-cta">
+              <button class="btn-cta-primary" onclick="scrollToOrcamento()">
+                <i class="bi bi-whatsapp"></i> Começar Agora
+              </button>
+              <button class="btn-cta-secondary" onclick="openVideoModal()">
+                <i class="bi bi-play-circle"></i> Ver Como Funciona
+              </button>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Atendimento</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Automatizado</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">+50%</span>
+                <span class="stat-label">Mais Conversões</span>
+              </div>
+        </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Funcionalidades -->
+      <section class="features" id="funcionalidades">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">O Que Nosso Funcionário 24h Faz</h2>
+            <p class="section-subtitle">
+              Um funcionário dedicado que trabalha para você 24 horas por dia, todos os dias
+            </p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+              <h3>Responde na Hora (24h)</h3>
+              <p>
+                Cliente manda mensagem e o funcionário responde imediatamente, mesmo
+                fora do horário comercial. Cliente não esfria e não procura
+                concorrente.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-funnel-fill"></i>
+              </div>
+              <h3>Filtra Curiosos de Interessados</h3>
+              <p>
+                O funcionário pergunta o que a pessoa precisa, quando e como prefere
+                ser atendida. Você fala só com quem realmente tem interesse.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-calendar-check-fill"></i>
+              </div>
+              <h3>Agenda ou Encaminha</h3>
+              <p>
+                Agenda consultas, visitas ou encaminha para vendedor. Coleta
+                dados essenciais. Menos conversa perdida e mais fechamento.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-shield-check-fill"></i>
+              </div>
+              <h3>Padroniza o Atendimento</h3>
+              <p>
+                Todas as respostas seguem o mesmo padrão profissional. Sua
+                empresa passa mais credibilidade.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h3>Primeiro Atendente</h3>
+              <p>
+                Faz a triagem inicial, resolve dúvidas simples e deixa tudo
+                pronto para o humano continuar. Economia de tempo e custo.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h3>Organiza Tudo</h3>
+              <p>
+                Menos bagunça no WhatsApp, menos mensagens esquecidas. Tudo
+                organizado e pronto para ação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefícios -->
+      <section class="benefits" id="beneficios">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Benefícios para Seu Negócio</h2>
+            <p class="section-subtitle">
+              Resultados reais que fazem a diferença no seu faturamento
+            </p>
+          </div>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="bi bi-piggy-bank-fill"></i>
+              </div>
+              <h3>Custo Muito Menor</h3>
+              <p>
+                Economize até 70% comparado a um funcionário tradicional. Sem salário, encargos ou benefícios trabalhistas.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="bi bi-calendar-x-fill"></i>
+              </div>
+              <h3>Sem Faltas</h3>
+              <p>
+                Funciona todos os dias, sem falta. Nunca mais se preocupe com funcionário que não aparece.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="bi bi-clock-fill"></i>
+              </div>
+              <h3>Sem Atrasos</h3>
+              <p>
+                Sempre pontual, sempre disponível. Não precisa esperar funcionário chegar ou atrasar atendimento.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="bi bi-shield-check-fill"></i>
+              </div>
+              <h3>Sem Processos Trabalhistas</h3>
+              <p>
+                Zero preocupação com CLT, férias, 13º, FGTS ou processos. Tranquilidade total para seu negócio.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="bi bi-currency-dollar"></i>
+              </div>
+              <h3>Mais Vendas</h3>
+              <p>
+                Respostas rápidas = mais conversões. Não perca nenhuma oportunidade, mesmo fora do horário.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="bi bi-arrow-up-circle-fill"></i>
+              </div>
+              <h3>Escala Infinita</h3>
+              <p>
+                Atende 10 ou 1.000 mensagens sem travar. Cresça sem limites e sem precisar contratar mais gente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Como Funciona -->
+      <section class="how-it-works" id="como-funciona">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Como Funciona</h2>
+            <p class="section-subtitle">
+              Simples, direto e entendível. Em uma frase:
+            </p>
+          </div>
+          <div class="quote-box">
+            <p class="quote-text">
+              "Esse funcionário 24h funciona como um atendente automático no WhatsApp que
+              responde na hora, qualifica o cliente e deixa tudo pronto pra
+              fechar a venda ou agendar, sem faltas, atrasos ou processos trabalhistas."
+            </p>
+          </div>
+          <div class="use-cases">
+            <h3 class="use-cases-title">Exemplos por Nicho</h3>
+            <div class="use-cases-grid">
+              <div class="use-case-card">
+                <i class="bi bi-heart-pulse-fill"></i>
+                <h4>Clínica / Saúde</h4>
+                <p>Agenda consultas e filtra urgência</p>
+              </div>
+              <div class="use-case-card">
+                <i class="bi bi-sparkles"></i>
+                <h4>Estética</h4>
+                <p>Responde valores, horários e agenda</p>
+              </div>
+              <div class="use-case-card">
+                <i class="bi bi-house-door-fill"></i>
+                <h4>Imobiliária</h4>
+                <p>Filtra comprador sério e agenda visita</p>
+              </div>
+              <div class="use-case-card">
+                <i class="bi bi-tools"></i>
+                <h4>Prestador de Serviço</h4>
+                <p>Organiza pedidos e orçamentos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulário de Orçamento -->
+      <section class="contact-form" id="contato">
+        <div class="container">
+          <div class="form-section">
+            <div class="form-header">
+              <h2>Solicite Seu Orçamento</h2>
+              <p>
+                Preencha o formulário e descubra como o Funcionário 24h pode
+                transformar seu atendimento com custo menor e sem problemas trabalhistas
+              </p>
+            </div>
+            <form action="/cadastro" method="POST" id="form-cad" class="form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="primeiro_nome">Primeiro Nome</label>
+                  <input
+                    type="text"
+                    id="primeiro_nome"
+                    name="primeiro_nome"
+                    placeholder="Seu primeiro nome"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="ultimo_nome">Último Nome</label>
+                  <input
+                    type="text"
+                    id="ultimo_nome"
+                    name="ultimo_nome"
+                    placeholder="Seu último nome"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seu@email.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="telefone">Telefone</label>
+                  <input
+                    type="text"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(11) 99999-9999"
+                    required
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn-submit">
+                <i class="bi bi-send-fill"></i> Enviar Solicitação
+              </button>
+            </form>
+        </div>
+        </div>
+      </section>
+
+      <!-- Formulário de Ajuda -->
+      <section class="help-section" id="form">
+        <div class="container">
+          <div class="help-content-wrapper">
+            <div class="help-info">
+              <h2>Ficou com Dúvidas?</h2>
+              <p>
+                Entre em contato conosco e tire todas as suas dúvidas sobre o
+                Funcionário 24h para WhatsApp
+              </p>
+              <div class="help-features">
+                <div class="help-feature">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Resposta em até 24h</span>
+                </div>
+                <div class="help-feature">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Atendimento personalizado</span>
+                </div>
+                <div class="help-feature">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Suporte completo</span>
+                </div>
+              </div>
+            </div>
+            <div class="help-form-wrapper">
+              <form
+                action="/ajuda"
+                method="POST"
+                id="form-help"
+                class="help-form"
+              >
+                <div class="form-group">
+                  <label for="ajuda">Assunto</label>
+                  <select name="ajuda" id="ajuda" required>
+                    <option value="funcionario_whatsapp">
+                      Funcionário 24h para WhatsApp
+                    </option>
+                    <option value="duvidas_gerais">Dúvidas Gerais</option>
+                    <option value="orcamento">Solicitar Orçamento</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="msg">Mensagem</label>
+                  <textarea
+                    name="message"
+                    id="msg"
+                    placeholder="Conte-nos sobre seu negócio e como podemos ajudar..."
+                    rows="8"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                  <i class="bi bi-whatsapp"></i> Enviar via WhatsApp
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contatos">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img src="img/logo_empresa.png" alt="SANTIAGO ENTREPRISE Logo" class="footer-logo-img" onerror="this.style.display='none';" />
+              <div class="footer-logo-text">
+                <span class="footer-logo-name">SANTIAGO</span>
+                <span class="footer-logo-subtitle">ENTREPRISE</span>
+              </div>
+            </div>
+            <p>
+              Transformando mensagens em oportunidades. Atendimento automático
+              24h para seu negócio.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#funcionalidades">Funcionalidades</a></li>
+              <li><a href="#beneficios">Benefícios</a></li>
+              <li><a href="#como-funciona">Como Funciona</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contato</h4>
+            <div class="social-links">
+              <a
+                href="https://wa.me/11987877764"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="bi bi-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 SANTIAGO ENTREPRISE. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal de Vídeo -->
+    <!-- 
+      INSTRUÇÕES PARA ADICIONAR O VÍDEO:
+      
+      1. Para YouTube:
+         - Vá no arquivo js/script.js
+         - Encontre a função openVideoModal()
+         - Substitua 'VIDEO_ID' pelo ID do seu vídeo do YouTube
+         - Exemplo: Se o link é https://www.youtube.com/watch?v=abc123
+                   Use: 'https://www.youtube.com/embed/abc123?autoplay=1&rel=0'
+      
+      2. Para Vimeo:
+         - Substitua a URL por: 'https://player.vimeo.com/video/VIDEO_ID?autoplay=1'
+      
+      3. Para vídeo local:
+         - Comente o iframe abaixo
+         - Descomente a tag <video>
+         - Coloque seu vídeo na pasta public/videos/
+         - Ajuste o nome do arquivo no src
+    -->
+    <div id="videoModal" class="video-modal">
+      <div class="video-modal-overlay" onclick="closeVideoModal()"></div>
+      <div class="video-modal-content">
+        <button class="video-modal-close" onclick="closeVideoModal()">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="video-container">
+          <!-- Opção 1: YouTube ou Vimeo (iframe) -->
+          <iframe
+            id="videoPlayer"
+            src=""
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <!-- Opção 2: Vídeo local (descomente e comente o iframe acima se usar) -->
+          <!-- 
+          <video id="videoPlayer" controls>
+            <source src="videos/agente-funcionando.mp4" type="video/mp4">
+            <source src="videos/agente-funcionando.webm" type="video/webm">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+          -->
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
