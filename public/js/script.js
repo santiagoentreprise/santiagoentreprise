@@ -70,7 +70,7 @@ function openVideoModal() {
     // Substitua 'VIDEO_ID' pelo ID do seu vídeo do YouTube
     // Exemplo: Se o link é https://www.youtube.com/watch?v=dQw4w9WgXcQ
     //          Use: 'dQw4w9WgXcQ'
-    const youtubeVideoId = "VIDEO_ID"; // <-- SUBSTITUA AQUI
+    const youtubeVideoId = "BdIY74LY_r8"; // <-- SUBSTITUA AQUI
     const videoUrl = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0&modestbranding=1`;
 
     // OPÇÃO 2: Vimeo
